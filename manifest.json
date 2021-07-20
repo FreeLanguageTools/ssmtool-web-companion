@@ -15,7 +15,7 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "ssmtool-web-companion@FreeLanguageTools"
+      "id": "{7cf334ab-26d1-4b34-9adc-569461c25460}"
     }
   },
   "content_scripts": [
