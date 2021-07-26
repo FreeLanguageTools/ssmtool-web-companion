@@ -14,8 +14,8 @@ browser.storage.sync.get(['enableSSM']).then(res => {
 
   $('p').each(function() {
     $(this).html($(this).text()
-      .split(/([\.\?!])(?= )/)
-      .map(v => {return '<span class=sentence>'+v+'</span>'}));
+      .split(/(?<=[\.\?!] )/)
+      .map(v => {return ' <span class=sentence>'+v.trimRight()+'</span> '}));
   });
   
   $('span.sentence').click(obj => {
